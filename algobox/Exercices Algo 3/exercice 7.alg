@@ -22,7 +22,7 @@
         <item code="12#i#0#nb.length - 1" algoitem="POUR i ALLANT_DE 0 A nb.length - 1">
             <item code="13#debutpour" algoitem="DEBUT_POUR"/>
             <item code="5#modulo#nb[i]%2#pasliste" algoitem="modulo PREND_LA_VALEUR nb[i]%2"/>
-            <item code="6#modulo == 0" algoitem="SI (modulo == 0) ALORS">
+            <item code="6#modulo == 1" algoitem="SI (modulo == 1) ALORS">
                 <item code="7#debutsi" algoitem="DEBUT_SI"/>
                 <item code="3#nb#1#i" algoitem="AFFICHER nb[i]"/>
                 <item code="8#finsi" algoitem="FIN_SI"/>
