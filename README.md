@@ -1,3 +1,3 @@
 # CONTENU DE LA FORMATION DE DEVELOPPEUR WEB 
 
-1° : Les Algorithmes
+ ~~1° : Les Algorithmes ~~
