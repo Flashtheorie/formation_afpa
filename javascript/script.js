@@ -1,4 +1,3 @@
-
 var cote_carre  = prompt("Quel est le coté du carré ?"); 
 
 var aire = cote_carre * cote_carre;
