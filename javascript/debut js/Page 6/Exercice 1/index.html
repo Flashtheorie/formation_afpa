@@ -1,0 +1,17 @@
+<script>
+	let temperature = parseInt(prompt("Quelle température ?"));
+	if (temperature < 0) 
+		{
+			var etat = "glace";
+		}
+	else if (temperature > 0 && temperature < 100)
+		{
+			var etat = "liquide";
+		}
+	else if (temperature > 100) 
+		{
+			var etat = "vapeur";
+		}
+
+		document.write("Ah, il est donc à l'état " + etat);
+</script>

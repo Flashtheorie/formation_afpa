@@ -1,0 +1,30 @@
+<script>
+	let random = Math.floor(Math.random() * 10);
+	let nbUser = parseInt(prompt("Quel est votre nombre ?"));
+	let nbTours = 0;
+
+	for (var i = 0; i < 5; i++) {
+		if (nbUser > random) {
+			alert("C'est moins");
+			nbTours++,
+			nbUser = parseInt(prompt("Quel est votre nombre ?"));
+		}
+		else if (nbUser < random) {
+			alert("C'est plus");
+			nbTours++,
+			nbUser = parseInt(prompt("Quel est votre nombre ?"));
+		}
+		else if (nbUser == random) {
+			alert("Bravo, vous avez trouvé le nombre en moins de 5 tours.");
+		}
+	}
+	if (nbUser == random) {
+		alert("Bravo, vous avez trouvé le nombre en " + nbTours + "tours")
+	}
+	else
+	{
+		alert("Désolé, vous n'avez pas trouvé le nombre en moins de 5 tours.")
+	}
+
+
+</script>

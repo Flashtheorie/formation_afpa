@@ -1,0 +1,13 @@
+<script>
+	let argentClient = parseInt(prompt("Combien d'argent avez vous ?"));
+	let prixBaguette = 0.90;
+	let PrixDeDixBaguettes = prixBaguette * 10;
+    let manque = PrixDeDixBaguettes - argentClient;
+	if (argentClient < PrixDeDixBaguettes) {
+		document.write("Vous ne pouvez pas acheter 10 baguettes. Il vous manque " + manque + "€")
+	}
+	else
+	{
+		document.write("Voila vos 10 baguettes.")
+	}
+</script>

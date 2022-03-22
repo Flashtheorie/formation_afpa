@@ -1,0 +1,16 @@
+<script>
+	function Multiplication(a) {
+		for (var i = 0; i <= 10; i++) {
+		document.write(i + "x" + a + " = ");
+		multip = i * a;
+		document.write(multip + "<br>")
+		
+
+		}
+	}
+	let a = parseInt(prompt("Quel est votre nombre ?"));
+	let multip;
+	document.write("<h1>La multiplication de <code>"+ a +"</code> est : <br>")
+	Multiplication(a);
+	document.write("<br></h1>");
+</script>

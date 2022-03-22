@@ -1,0 +1,11 @@
+<script>
+	let prixht = parseInt(prompt("Quel est le prix HT"));
+	let ttc1 = 5.5;
+	let ttc2 = 20;
+	let prixttc1 = (prixht * ttc1) / 100;
+	prixttc1 = prixht + prixttc1;
+	prixttc2 = (prixht * ttc2) / 100;
+	prixttc2 = prixht + prixttc2;
+
+	document.write("Les prix TTC de " + prixht + " sont " + prixttc1 + "€ et " + prixttc2 + "€")
+</script>

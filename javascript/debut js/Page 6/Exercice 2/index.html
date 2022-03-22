@@ -1,0 +1,28 @@
+<script>
+	let prixPhotocopDixPremieres = 0.10;
+	let prixPhotocopVingPremieres = 0.09;
+	let prixPhotocopPlusDeVingt = 0.08;
+	let nbrPhotocop = parseInt(prompt("Combien de photocopie ?"));
+
+
+
+	if (nbrPhotocop < 10) 
+	{
+		var prix = nbrPhotocop * prixPhotocopDixPremieres;
+		var option = prixPhotocopDixPremieres
+	}
+
+	if (nbrPhotocop > 10 && nbrPhotocop < 20) 
+	{
+		var prix = nbrPhotocop * prixPhotocopVingPremieres;
+		var option = prixPhotocopVingPremieres
+	}	
+
+	if (nbrPhotocop >= 20) 
+	{
+		var prix = nbrPhotocop * prixPhotocopPlusDeVingt;
+		var option = prixPhotocopPlusDeVingt
+	}
+
+	document.write("<h1>Très bien, vos " + nbrPhotocop + " photocopies, au prix de " + option + "€/u" + " vont vous couter " + prix + "€ s'il vous plait.</h1>");
+</script>
