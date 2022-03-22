@@ -1,0 +1,31 @@
+<h1>
+	<script>
+		let dollar = 1.22;
+		let roubles = 91.14;
+		let yuans = 7.89;
+		let livres = 0.89;
+		var result;
+
+		let combien = parseInt(prompt("Combien d'euros ?"));
+		let quelleMonnaie = prompt("En quelle monnaie ? ( dollar, roubles, yuans, livres");
+
+		switch(quelleMonnaie)
+		{
+			case 'dollar':
+				result = combien * dollar;
+				break;
+			case 'roubles':
+				result = combien * roubles;
+				break;
+			case 'yuans':
+				result = combien * yuans;
+				break;
+			case 'livres':
+				result = combien * livres;
+				break;
+		}
+		
+
+		document.write("Vos " + combien + "€ vous font " + result + " " + quelleMonnaie);
+	</script>
+</h1>
