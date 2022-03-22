@@ -1,0 +1,21 @@
+<script>
+	let random = Math.floor(Math.random() * 101);
+	let nbUser = parseInt(prompt("Quel est votre nombre ?"));
+	let nbTours = 0;
+	while(nbUser != random)
+	{
+		if (nbUser < random) {
+			alert("C'est plus");
+			nbUser = parseInt(prompt("Quel est votre nombre ?"));
+			nbTours++;
+		}
+		else if (nbUser > random) {
+			alert("C'est moins");
+			nbUser = parseInt(prompt("Quel est votre nombre ?"));
+			nbTours++;
+		}
+	}
+	if (nbUser == random) {
+		alert("Bravo !, vous avez mis " + nbTours+ " tours")
+	}
+</script>
