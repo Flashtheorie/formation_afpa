@@ -6,4 +6,4 @@
 <strike>4° : Les boucles</strike><br>
 <strike>5° : Les fonctions</strike><br>
 6° : Les objets <br>
-(...)
+(...) 
