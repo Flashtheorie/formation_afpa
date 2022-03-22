@@ -1,0 +1,16 @@
+<script>
+	let nbr = parseInt(prompt("Quel est le nombre ?"));
+	let f = 1;
+
+	function factorielle(nbr)
+	{
+		for (var i = 1; i < nbr; i++) {
+			f = i * nbr;
+			return f;
+		}
+	}
+	result = factorielle(nbr);
+
+	document.write("La factorielle de " + nbr + " est " + result);
+
+</script>
