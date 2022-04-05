@@ -15,7 +15,11 @@
     display: block;    
 
 }
-
+h1
+{
+    text-align: center;
+    font-size: 2em;
+}
 body {
     display: flex;
     font-family: 'JetBrainsMono';
@@ -29,6 +33,7 @@ body {
     height: 70px;
     box-shadow : 2px 5px 5px black;
     background-color: #f8c291;
+    z-index: 10;
 
 }
 #emoji, #couillasse {
@@ -70,4 +75,31 @@ a:hover #emoji {
     padding-left: 20%;
     padding-right: 20%;
     color: white;
+}
+
+#scrollUp
+{
+position: fixed;
+bottom : 10px;
+right: -100px;
+opacity: 0.5;
+}
+#scrollUp2
+{
+position: fixed;
+bottom : 10px;
+left: -100px;
+opacity: 0.5;
+-webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+#scrollUp3
+{
+position: fixed;
+left : -150px;
+top: -100px;
+opacity: 0.5;
+
+transform: rotate(90deg);
 }
