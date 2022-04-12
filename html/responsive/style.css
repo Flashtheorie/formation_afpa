@@ -1,0 +1,272 @@
+ /* GENERAL */
+body{
+    margin: 0;
+    padding: 0;
+    background-color: dimgrey;
+}
+
+ /* HEADER */
+ header{
+    height: 100vh;
+    background-color: gray;
+     background-image: url("img/illustration_header.jpg");
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+ }
+
+ /* MENU */
+ #menu{
+     list-style: none;
+     padding: 0;
+     margin: 0;
+     height: 75px;
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+     background-color: darkslategrey;
+     opacity: 0.65;
+ }
+ .link-menu{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+ }
+ /* FIN MENU */
+
+.content-header{
+    text-align: center;
+ }
+.titre-content-header{
+    color: white;
+    margin-top: 30vh;
+    font-size: 64px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+.sous-titre-header{
+    color: white;
+    font-size: 32px;
+    text-transform: uppercase;
+    font-family: 'Source Code Pro', sans-serif;
+}
+ /* FIN HEADER */
+
+ /* CONTENT */
+#btn-inscription{
+    background-color: darkslategray;
+    padding: 12px;
+    width: fit-content;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    position: fixed;
+    top: 50vh;
+    right: 0;
+    text-align: center;
+}
+#link-inscription{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Source Code Pro', sans-serif;
+}
+
+
+ #content{
+    width: 80%;
+    margin: auto;
+ }
+ .content-presentation{
+     text-align: center;
+ }
+ .titre-section{
+     text-align: center;
+     color: white;
+     text-transform: uppercase;
+     font-size: 32px;
+     font-family: 'Montserrat', sans-serif;
+ }
+ .titre-section:after{
+    content: '';
+     display: block;
+     width: 25%;
+     margin: 5px auto;
+     height: 5px;
+     background-color: white;
+     border-radius: 5px;
+ }
+ .titre{
+     text-align: center;
+     color: white;
+     font-family: 'Source Code Pro', sans-serif;
+     font-weight: bold;
+     text-transform: uppercase;
+     font-size: 64px;
+ }
+ .titre-contact{
+     text-align: center;
+     color: white;
+     font-family: 'Montserrat', sans-serif;
+ }
+ .texte-presentation{
+    color: white;
+    font-family: 'Source Code Pro', sans-serif;
+    text-align: justify;
+ }
+ .separateur{
+     background-color: white;
+     border-radius: 15px;
+     display: block;
+ }
+ .separateur-horizontal{
+     margin: 25px auto;
+     height: 2px;
+ }
+ .separateur-vertical{
+     width: 2px;
+     margin: 0 15px;
+ }
+ .btn-decouverte{
+     text-align: center;
+     margin: 25px;
+ }
+ .btn-decouvrir{
+     text-decoration: none;
+     color: white;
+     font-family: 'Montserrat', sans-serif;
+     text-transform: uppercase;
+     font-weight: bold;
+     padding: 10px;
+     border: 2px solid white;
+     border-radius: 10px;
+ }
+ .btn-decouvrir:hover{
+     text-decoration: none;
+     background-color: white;
+     color: dimgrey;
+ }
+ .front-back{
+     display: flex;
+ }
+.titre-presentation{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+.liste-langage{
+    list-style: none;
+    margin: 0;
+}
+.logo-langage{
+    width: 175px;
+    height: 150px;
+}
+.logo{
+    width: 350px;
+    height: 350px;
+    float: left;
+}
+#logo-css, #logo-php{
+    float: right;
+}
+ /* FIN CONTENT */
+
+  /* FOOTER */
+.footer{
+    height: 45px;
+    background-color: darkslategrey;
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+.texte-footer{
+    padding-top: 15px;
+}
+#createur{
+    font-weight: bold;
+}
+ /* FIN FOOTER */
+
+.form{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+ .form-contact{
+     display: flex;
+     flex-direction: column;
+     /*width: 50%;*/
+     margin: 5px auto;
+     text-align: center;
+ }
+ .form-contact input{
+     width: 365px;
+ }
+ .form-contact textarea{
+     width: 75%;
+     margin: auto;
+ }
+ .label-contact{
+     font-size: 16px;
+     color: white;
+     font-family: 'Montserrat', sans-serif;
+ }
+ .btn-contact{
+     text-align: center;
+     margin: 25px;
+ }
+ .btn-form-contact{
+     text-decoration: none;
+     color: white;
+     background-color: transparent;
+     font-family: 'Montserrat', sans-serif;
+     text-transform: uppercase;
+     font-weight: bold;
+     padding: 10px;
+     border: 2px solid white;
+     border-radius: 10px;
+ }
+ .btn-form-contact:hover{
+     text-decoration: none;
+     background-color: white;
+     color: dimgrey;
+ }
+
+
+ @media screen and (max-width: 900px) {
+     .titre-content-header
+     {
+            
+            font-size: 40px
+     }
+
+     #btn-inscription
+     {
+         visibility: hidden
+     }
+
+    .front-back
+    {
+        flex-direction: column;
+    }
+
+    .titre-section
+    {
+        font-size: 25px;
+    }
+
+    .texte-presentation
+    {
+        font-size: 25px;
+    }
+
+    #form {
+        display: flex;
+        flex-direction: column;
+    }
+
+ }
